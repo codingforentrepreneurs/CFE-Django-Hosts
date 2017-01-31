@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'cfehosts.urls'
 ROOT_HOSTCONF = 'cfehosts.hosts'
 DEFAULT_HOST = "www"
-
+PARENT_HOST = 'tirr.com'
 
 TEMPLATES = [
     {
