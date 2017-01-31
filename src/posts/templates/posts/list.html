@@ -1,3 +1,14 @@
+{% load hosts %}
+
+<a href="{% host_url 'posts:list' host 'blog' port '8000' scheme 'http' %}">Blog List</a>
+
+<a href="{% host_url 'posts:list' host 'www' port '8000' scheme 'http' %}">WWW List</a>
+
+
+<a href="{% url 'posts:list' %}">Relative Blog List</a>
+
+
+
 {% for obj in object_list %}
 <div class="row">
   <div class="col-sm-12">
