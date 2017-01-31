@@ -1,0 +1,13 @@
+{% for obj in object_list %}
+<div class="row">
+  <div class="col-sm-12">
+    <div class="thumbnail">
+      <div class="caption post-detail-item">
+        {{ obj.title }}
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>
+      </div>
+    </div>
+  </div>
+<hr/>
+</div>
+{% endfor %}

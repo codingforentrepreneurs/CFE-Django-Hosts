@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_hosts',
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ ROOT_URLCONF = 'cfehosts.urls'
 ROOT_HOSTCONF = 'cfehosts.hosts'
 DEFAULT_HOST = "www"
 PARENT_HOST = 'tirr.com'
+
 
 TEMPLATES = [
     {
