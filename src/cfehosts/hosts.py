@@ -7,7 +7,12 @@ host_patterns = patterns('',
     host(r'admin', 'cfehosts.urls.admin', name='admin'),
     host(r'blog', 'cfehosts.urls.blog', name='blog'),
     #host(r'blog', 'posts.urls', name='blog'),
-    host(r'(\w+)', 'cfehosts.hostsconfig.urls', name='wildcard'),
+    host(r'(?P<username>\w+)', 
+            'cfehosts.hostsconfig.urls', 
+            name='wildcard', 
+            callback='cfehosts.hostsconfig.callbacks.subdomain_callback'
+        ),
+    # host(r'(\w+)', 'cfehosts.hostsconfig.urls', name='wildcard'),
 )
 
 
