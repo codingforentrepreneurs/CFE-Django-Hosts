@@ -1,3 +1,5 @@
+![CFE Django Hosts Logo](https://cfe2-static.s3-us-west-2.amazonaws.com/media/projects/django-hosts/images/cfe_django_hosts.png)
+
 # CFE & Django Hosts
 
 Learn how to implement Django Hosts (https://kirr.co/orhp9i) in your Django project.
